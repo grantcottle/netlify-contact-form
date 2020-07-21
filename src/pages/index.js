@@ -9,7 +9,6 @@ const IndexPage = () => (
             <div class="container">
                 <div class="columns is-vcentered is-centered">
                     <div class="column is-half">
-                        <h1 class="is-size-2">Get in contact</h1>
                         <form
                             name="contact"
                             method="post"
@@ -17,12 +16,11 @@ const IndexPage = () => (
                             data-netlify-honeypot="bot-field"
                         >
                         <input
-                            class="input"
                             type="text"
                             placeholder="Your Name"
                             name="name"
                         />
-                            <button  class="button is-primary is-medium"
+                            <button 
                                 >
                                     Send
                                 </button>
