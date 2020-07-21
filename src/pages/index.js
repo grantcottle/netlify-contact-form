@@ -13,7 +13,7 @@ const IndexPage = () => (
 <input
     class="input"
     type="text"
-    placeholder='Your Name"
+    placeholder="Your Name"
     name="name"
 />
     <button class="button is-primary is-medium">
