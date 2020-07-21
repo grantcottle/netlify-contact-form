@@ -11,10 +11,8 @@ const SecondPage = () => (
             <div class="container">
                 <div class="columns is-vcentered is-centered">
                     <div class="column is-half">
-                        <h1 class="is-size-2">
-                           Get in contact 
-                        </h1>
-                        <form name="contact" method="POST" data-netlify="true">
+                        <h1 class="is-size-2">Get in contact</h1>
+                        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action=".netlify/functions/submission-created" >
                             <div class="field">
                                 <label class="label">
                                     Your Name:
