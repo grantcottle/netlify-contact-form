@@ -14,7 +14,7 @@ const IndexPage = () => (
                         <h1 class="is-size-2">Get in contact</h1>
                         <form
                             name="contact"
-                            method="POST"
+                            method="post"
                             data-netlify="true"
                             netlify-honeypot="bot-field"
                         >
@@ -37,19 +37,6 @@ const IndexPage = () => (
                                         name="email"
                                     />
                                 </label>
-                            </div>
-                            <div class="field">
-                                <label for="role[]" class="label">
-                                    Your Role:
-                                </label>
-                                <div class="select is-multiple">
-                                    <select name="role[]" multiple size="2">
-                                        <option value="leader">Leader</option>
-                                        <option value="follower">
-                                            Follower
-                                        </option>
-                                    </select>
-                                </div>
                             </div>
                             <div class="field">
                                 <label class="label">
