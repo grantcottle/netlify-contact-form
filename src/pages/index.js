@@ -31,7 +31,6 @@ const IndexPage = () => (
                 </div>
             </div>
         </section>
-        <SEO title="Contact form" />
     </Layout>
 )
 
