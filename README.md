@@ -14,6 +14,8 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 
 ## 🚀 Quick start
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3cc42641-caf3-44e7-84a8-6c3c2994c4be/deploy-status)](https://app.netlify.com/sites/naughty-jackson-68715e/deploys)
+
 1.  **Create a Gatsby site.**
 
     Use the Gatsby CLI to create a new site, specifying the default starter.
