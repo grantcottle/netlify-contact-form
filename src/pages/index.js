@@ -14,10 +14,11 @@ const IndexPage = () => (
                         <h1 className="is-size-2">Get in contact</h1>
                         <form
                             name="contact"
-                            method="post"
-                            netlify
+                            method="POST"
+                            netlify-honeypot='bot-field'
                             data-netlify="true"
                         >
+                        <input type="hidden" name="form-name" value='contact'/>
                             <div className="field">
                                 <label className="label">
                                     Your Name:
