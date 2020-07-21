@@ -6,17 +6,75 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import "../components/customs.scss"
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
+    <Layout>
+        <section class="section level">
+            <div class="container">
+                <div class="columns is-vcentered is-centered">
+                    <div class="column is-half">
+                        <h1 class="is-size-2">Get in contact</h1>
+                        <form
+                            name="contact"
+                            method="POST"
+                            data-netlify="true"
+                            netlify-honeypot="bot-field"
+                        >
+                            <div class="field">
+                                <label class="label">
+                                    Your Name:
+                                    <input
+                                        class="input"
+                                        type="text"
+                                        name="name"
+                                    />
+                                </label>
+                            </div>
+                            <div class="field">
+                                <label class="label">
+                                    Your Email:
+                                    <input
+                                        class="input"
+                                        type="email"
+                                        name="email"
+                                    />
+                                </label>
+                            </div>
+                            <div class="field">
+                                <label for="role[]" class="label">
+                                    Your Role:
+                                </label>
+                                <div class="select is-multiple">
+                                    <select name="role[]" multiple size="2">
+                                        <option value="leader">Leader</option>
+                                        <option value="follower">
+                                            Follower
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">
+                                    Message:
+                                    <textarea
+                                        class="textarea"
+                                        name="message"
+                                    ></textarea>
+                                </label>
+                            </div>
+                            <div class="field">
+                                <button
+                                    class="button is-primary is-medium"
+                                    type="submit"
+                                >
+                                    Send
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <SEO title="Contact form" />
+    </Layout>
 )
 
 export default IndexPage
